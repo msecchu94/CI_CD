@@ -1,0 +1,7 @@
+jobs:
+  my_first_job:
+    runs-on: windows
+    steps:
+      # This step references the directory that contains the action.
+      - name: Use local first action
+        uses: ./.github/actions/first-action
