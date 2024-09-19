@@ -14,17 +14,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyHomePage('Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  late String title;
-  MyHomePage(
-    this.title, {
-    super.key,
-  });
+  const MyHomePage({super.key, required this.title});
+  final String title;
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
